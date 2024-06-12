@@ -1,0 +1,251 @@
+* {
+    --set-color: rgb(204, 255, 254);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+::spelling-error {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(167, 167, 167);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+::-webkit-appearance {
+    display: none;
+    text-decoration: none;
+}
+
+/* 
+::-webkit-scrollbar */
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 一下为button的样式 */
+button {
+    background-color: rgb(255, 255, 255);
+    -webkit-app-region: no-drag;
+
+}
+
+button:hover {
+    background-color: rgb(255, 206, 206);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    width: 90%;
+    border: 1px solid rgb(157, 144, 179);
+    background-color: rgb(250, 250, 250);
+}
+
+input:focus {
+    text-decoration: none;
+}
+
+/* .file_choice {} */
+
+.file_choice:hover {
+    background-color: rgba(165, 165, 165, 0.801);
+}
+
+.add_img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.add_img:hover {
+    background-color: rgba(165, 165, 165, 0.801);
+}
+
+
+/*一下为topBar的样式 */
+#top_bar {
+    -webkit-app-region: drag;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(200, 154, 255, 0.963);
+}
+
+#icon {
+    font-family: fantasy;
+    line-height: 40px;
+    left: 0;
+    position: absolute;
+    height: 40px;
+    width: 80px;
+}
+
+#close_btn {
+    background-color: rgba(240, 248, 255, 0);
+    top: 0px;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: none;
+}
+
+#close_btn:hover,
+#close:focus {
+    background-color: rgba(255, 179, 179, 0.9);
+    outline: none;
+    border: none;
+}
+
+/* 一下为left_bar的css */
+#left_bar {
+    border-right: 1px slateblue solid;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    background-color: rgba(218, 218, 218, 0.847);
+}
+
+.choice {
+    border-bottom: 1px solid rgb(181, 200, 253);
+    text-align: center;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(231, 231, 231);
+}
+
+.choice:hover {
+    background-color: rgba(224, 253, 234, 0.97);
+}
+
+
+
+/* 一下为rightcon的css */
+#right_con {
+    overflow: auto;
+    position: absolute;
+    background-color: rgba(245, 245, 245, 0.858);
+    bottom: 0;
+    right: 0;
+}
+
+.right_page {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.server_block {
+    padding-top: 20px;
+    display: block;
+    background-color: rgba(227, 227, 227, 0.724);
+    margin: 50px auto;
+    border: 2px solid rgba(255, 255, 255, 0.916);
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.server_block button {
+    border: solid 1px;
+}
+
+#isrunning {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.stop {
+    background-color: red;
+}
+
+.run {
+    background-color: rgb(94, 203, 127);
+}
+
+.jump_win {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 0px;
+    z-index: 1;
+    background-color: rgb(218, 218, 218);
+    position: fixed;
+    height: 300px;
+    width: 200px;
+    display: none;
+    border-radius: 7px;
+    border: 2px solid rgb(92, 92, 92);
+}
+
+.del_router_btn {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.del_public_btn {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#file_page {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    display: none;
+}
+
+#file_page textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    outline: none;
+}
+
+#close_file_btn {
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 40px;
+    right: 0;
+}
+
+#close_file_btn:hover {
+    background-color: rgb(134, 174, 174);
+}
+
+#close_file_btn img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="top_bar">
+        <div id="icon">Cileamzh</div>
+        <button id="close_btn"><img src="./img/close.svg" alt=""></button>
+    </div>
+    <div id="left_bar">
+        <div class="choice">Server</div>
+        <div class="choice">Router</div>
+        <div class="choice">Web</div>
+        <div class="choice">Public</div>
+    </div>
+    <div id="right_con">
+        <div class="right_page">
+            <div onclick=" server_jwin.style.display = 'block'" class="add_img"><img src="./img/add.svg" alt=""></div>
+        </div>
+        <div class="right_page">
+            <div onclick="router_jwin.style.display='block'" class="add_img"><img src="./img/add.svg" alt=""></div>
+        </div>
+        <div class="right_page">
+            <div onclick="router_jwin.style.display='block'" class="add_img"><img src="./img/add.svg" alt=""></div>
+        </div>
+        <div class="right_page">
+            <div onclick="public_jwin.style.display='block'" class="add_img"><img src="./img/add.svg" alt=""></div>
+        </div>
+    </div>
+    <div id="server_jwin" class="jump_win">
+        服务器名称：<br><input type="text" class="server_info"><br>
+        端口号： <br><input type="text" class="server_info"><br>
+        路由文件：<br><input type="text" class="server_info"><br>
+        静态目录：<br><input type="text" class="server_info">
+        <br><br><br><br>
+        <button onclick="create_server()">确定</button>
+        <button onclick="server_jwin.style.display='none'">取消</button>
+    </div>
+    <div id="router_jwin" class="jump_win">
+        <input type="file">
+        <br><br><br><br><br><br><br>
+        <button onclick="post_router_file()">确定</button>
+        <button onclick="router_jwin.style.display='none'">取消</button>
+    </div>
+    <div id="public_jwin" class="jump_win">
+        <input type="text">
+        <br><br><br><br>
+        <button onclick="create_public_dir()">确定</button>
+        <button onclick="public_jwin.style.display='none'">取消</button>
+    </div>
+    <!-- 文件修改页面 -->
+    <div id="file_page">
+        <textarea spellcheck="false"></textarea>
+        <div id="close_file_btn"><img src=" ./img/close.svg" onclick="file_page.style.display='none'"></div>
+    </div>
+    <script src="./renderjs/jquery3.7.1.js"></script>
+    <script src="./renderjs/index.js"></script>
+</body>
+
+</html>
