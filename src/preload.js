@@ -44,6 +44,5 @@ contextBridge.exposeInMainWorld("version", {
     },
     del_public_dir: (dir_name) => {
         return ipcRenderer.invoke("del_public_dir", [dir_name])
-    },
-    get_test() { }
+    }
 })
